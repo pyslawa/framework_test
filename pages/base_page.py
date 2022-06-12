@@ -1,12 +1,5 @@
-import os
-import time
-
-from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
-from selenium import webdriver
-
-from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
 class BasePage():

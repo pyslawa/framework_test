@@ -1,11 +1,6 @@
 import os
 import sys
-import unittest
-import time
 
-import driver as driver
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
 SYSTEM = sys.platform
@@ -34,29 +29,3 @@ else:
     CHROME_DRIVER = 'chromedriver'
     FIREFOX_DRIVER = 'geckodriver'
     EDGE_DRIVER = 'MicrosoftWebDriver.exe'
-
-
-# class MainTest(unittest.TestCase):
-#
-#     def setUp(self):
-#         pass
-#
-#     @classmethod
-#     def setUpClass(self):
-#         self.driver_service = Service(executable_path=r"/drivers\chromedriver.exe")
-#         # self.driver_service = Service(executable_path=ChromeDriverManager().install())
-#         self.driver = webdriver.Chrome(service=self.driver_service)
-#
-#     def test_tittle(self):
-#         self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
-#         title = self.driver.title
-#         print(f"Actual title: " + title)
-#         assert 'Scouts panel - sign in' == title
-#
-#     def tearDown(self):
-#         pass
-#
-#     @classmethod
-#     def tearDownClass(self):
-#         self.driver.quit()
-
